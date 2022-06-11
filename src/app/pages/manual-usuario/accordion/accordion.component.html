@@ -1,0 +1,174 @@
+<app-modal></app-modal>
+
+<div class="accordion" id="accordionManualUser">
+
+  <!-- 1 -->
+  <div class="accordion-item" >
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <strong class="text-muted">Primeros pasos</strong>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionManualUser">
+      <div class="accordion-body row">
+        <div class="row pt-3 p-lg-5 col-lg-6">
+          <div class="col-md-4">
+            <img src="assets/documentacion-usuario/login.jpg" class="img-fluid rounded mx-auto d-block" alt="img login" (click)="setImgModal($event)">
+          </div>
+          <blockquote class="p-lg-5 col-lg-8">
+            <strong class="text-muted">El primer paso es disponer de una cuenta.</strong>
+            Si no dispone de ella puede registrarse pulsando <em>Crear cuenta</em> en la parte inferiror de la pantalla, le redireccionará a la pantalla de registro donde deberá rellenar todos los datos.
+            Una vez obtenida la cuenta ingrese los datos para empezar a utilizar la app. Si desea que se recurde el usuario active <em>Recordar usuario</em>
+          </blockquote>
+        </div>
+        <div class="row pt-3 p-lg-5 col-lg-6">
+          <div class="col-md-4">
+            <img src="assets/documentacion-usuario/registro.jpg" class="img-fluid rounded mx-auto d-block" alt="img register" (click)="setImgModal($event)">
+          </div>
+          <blockquote class="p-lg-5 col-lg-8">
+            <strong class="text-muted">Crear cuenta.</strong>
+            Rellene todos los campos del formulario con un email al que tengas acceso, <em>requiere verificación</em>, y una contraseña de al menos 6 carácteres.
+            <br/>
+            <br/>
+            <strong class="text-muted">Una vez registrado</strong> recibirá un correo desde <em>incrediclap@outlook.es</em>. En caso de no encontrar el mensaje en la bandeja de entrada, compruebe en correo no deseado.
+            <br/>
+            <br/>
+            <strong class="text-muted">Para verificar</strong> la cuenta haz click en el enlace del mensaje y debe de abrirse un ventana del navegador confirmando que la cuenta ha sido
+            verificada. En caso de no poder abrir el enlace copia y pegar manualmente en el navegador.
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <strong class="text-muted">Pantalla de inicio</strong>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionManualUser">
+    <div class="accordion-body row">
+      <div class="row pt-3 p-lg-5 col-lg-6">
+        <div class="col-md-4">
+          <img src="assets/documentacion-usuario/home2.jpg" class="img-fluid rounded mx-auto d-block" alt="img login" (click)="setImgModal($event)">
+        </div>
+        <blockquote class="p-lg-5 col-lg-8">
+          <strong class="text-muted">Desde la pantalla de inicio</strong>, accedemos a todas las funcionalidades que ofrece la app.
+          <ul class="list-group list-group-flush" >
+            <li class="list-group-item"><strong class="text-muted">1.</strong> Menu desplegable.</li>
+            <li class="list-group-item"><strong class="text-muted">2.</strong> Redirecciona al inicio.</li>
+            <li class="list-group-item"><strong class="text-muted">3.</strong> Redirecciona a la pantalla de creación de audios.</li>
+            <li class="list-group-item">
+              <strong class="text-muted">4.</strong> Carrusel con las imagenes de los artistas y citas. Espera mientras se muestran de forma automática o desplaza hacia la 
+              derecha o izquierda para cambiarentre estos.
+            </li>
+          </ul> 
+        </blockquote>
+      </div>
+
+      <div class="row pt-3 p-lg-5 col-lg-6">
+        <div class="col-md-4">
+          <img src="assets/documentacion-usuario/home.jpg" class="img-fluid rounded mx-auto d-block" alt="img register" (click)="setImgModal($event)">
+        </div>
+        <blockquote class="p-lg-5 col-lg-8">
+          <strong class="text-muted">Desde el menu desplegable</strong>, accedemos a funcionalidades adiccionales.
+          <br/>
+          <br/>
+          <p><strong class="text-muted">1. Mi cuenta</strong>, ajustes de la cuenta, cambio de nombre de usuario y contraseña.</p>
+    
+          <p><strong class="text-muted">2. Mis creaciones</strong>, lista de audios creados por el usuario.</p>
+   
+          <p><strong class="text-muted">3. Todas las creaciones</strong>, todas las creaciones de los usuarios.</p>
+
+          <p><strong class="text-muted">4. Cerrar sesion</strong>, salir de la app.</p>
+      
+        </blockquote>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <strong class="text-muted">Pantalla creación</strong>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionManualUser">
+      <div class="accordion-body row">
+        <div class="row pt-3 p-lg-5 col-lg-6">
+          <div class="col-md-4">
+            <img src="assets/documentacion-usuario/crea.jpg" class="img-fluid rounded mx-auto d-block" alt="img login" (click)="setImgModal($event)">
+          </div>
+          <blockquote class="p-lg-5 col-lg-8">
+            <strong class="text-muted">El primer paso es disponer de una cuenta.</strong>
+            Si no dispone de ella puede registrarse pulsando <em>Crear cuenta</em> en la parte inferiror de la pantalla, le redireccionará a la pantalla de registro donde deberá rellenar todos los datos.
+            Una vez obtenida la cuenta ingrese los datos para empezar a utilizar la app. Si desea que se recurde el usuario active <em>Recordar usuario</em>
+          </blockquote>
+        </div>
+        <div class="row pt-3 p-lg-5 col-lg-6">
+          <div class="col-md-4">
+            <img src="assets/documentacion-usuario/grabando.jpg" class="img-fluid rounded mx-auto d-block" alt="img register" (click)="setImgModal($event)">
+          </div>
+          <blockquote class="p-lg-5 col-lg-8">
+            <strong class="text-muted">Crear cuenta.</strong>
+            Rellene todos los campos del formulario con un email al que tengas acceso, <em>requiere verificación</em>, y una contraseña de al menos 6 carácteres.
+            <br/>
+            <br/>
+            <strong class="text-muted">Una vez registrado</strong> recibirá un correo desde <em>incrediclap@outlook.es</em>. En caso de no encontrar el mensaje en la bandeja de entrada, compruebe en correo no deseado.
+            <br/>
+            <br/>
+            <strong class="text-muted">Para verificar</strong> la cuenta haz click en el enlace del mensaje y debe de abrirse un ventana del navegador confirmando que la cuenta ha sido
+            verificada. En caso de no poder abrir el enlace copia y pegar manualmente en el navegador.
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="accordion-item" >
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <strong class="text-muted">Primeros pasos 4</strong>
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour" data-bs-parent="#accordionManualUser">
+      <div class="accordion-body d-flex">
+        <img src="assets/documentacion-usuario/login.jpg" width="220" class="img-fluid" alt="...">
+        <blockquote class="p-5">
+           <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        <strong class="text-muted">Primeros pasos 5</strong>
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionManualUser">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        <strong class="text-muted">Primeros pasos 6</strong>
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionManualUser">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+   
+ </div>
