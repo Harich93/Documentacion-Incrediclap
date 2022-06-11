@@ -8,3 +8,8 @@ img {
    padding: 0;
    margin: 0;
 }
+
+
+.accordion-button:not(.collapsed) {
+   background-color: transparent;
+}
