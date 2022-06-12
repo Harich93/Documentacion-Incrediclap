@@ -9,6 +9,7 @@ import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AccordionComponent } from './pages/manual-usuario/accordion/accordion.component';
 import { ModalComponent } from './shared/modal/modal.component';
+import { AccordionFrontComponent } from './pages/documentacion-frontend/accordion-front/accordion-front.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ModalComponent } from './shared/modal/modal.component';
     NavBarComponent,
     FooterComponent,
     AccordionComponent,
-    ModalComponent
+    ModalComponent,
+    AccordionFrontComponent
   ],
   imports: [
     BrowserModule,
