@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { DataService } from 'src/app/services/data.service'
 
 @Component({
   selector: 'app-accordion-front',
   templateUrl: './accordion-front.component.html',
   styleUrls: ['./accordion-front.component.scss']
 })
-export class AccordionFrontComponent implements OnInit {
+export class AccordionFrontComponent {
 
-  constructor() { }
+  baseUrlCode: string = 'https://github.com/Harich93/Flutter--App_IncredibClap/blob/main/lib'; 
 
-  ngOnInit(): void {
-  }
+  constructor(public dataS: DataService){}
+
 
 }

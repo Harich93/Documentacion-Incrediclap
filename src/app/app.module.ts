@@ -20,11 +20,11 @@ import { AccordionFrontComponent } from './pages/documentacion-frontend/accordio
     FooterComponent,
     AccordionComponent,
     ModalComponent,
-    AccordionFrontComponent
+    AccordionFrontComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

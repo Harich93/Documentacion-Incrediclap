@@ -24,8 +24,4 @@ export class ModalServiceService {
     this._urlImg = val;
     this._urlImg$.next(this._urlImg);
   }
-
-  
-
-
 }
