@@ -288,54 +288,55 @@
 
   <!-- 6 Custom Widgets -->
   <div class="accordion-item" >
-  <h2 class="accordion-header" id="headingSix">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-      <strong class="text-muted">Custom Widgets</strong>
-    </button>
-  </h2>
-  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionManualUser">
-    <div class="accordion-body">
-      <blockquote class="pt-xl-1 ps-xl-5 pe-xl-5">
-        <h3>
-          <img class="me-2" src="assets/icons/widgets.png" width="42"/>
-          <strong class="text-muted">Auth</strong>
-        </h3>
-        <hr/>
-        <ul class="list-group list-group-flush">
-          <li *ngFor="let widget of dataS.lstAuthWidgets" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
-            <a href="{{baseUrlCode + '/widgets/auth/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
-            <span class="text-muted"> {{widget.desc}}</span>
-          </li> 
-        </ul>
-      </blockquote>       
-      <blockquote class="pt-xl-1 ps-xl-5 pe-xl-5">
-        <h3>
-          <img class="me-2" src="assets/icons/widgets.png" width="42"/>
-          <strong class="text-muted">Music</strong> 
-        </h3>
-        <hr/>
-        <ul class="list-group list-group-flush">
-          <li *ngFor="let widget of dataS.lstMusicWidgets" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
-            <a href="{{baseUrlCode + '/widgets/music/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
-            <span class="text-muted"> {{widget.desc}}</span>
-          </li>  
-        </ul>
-      </blockquote>       
-      <blockquote class="pt-xl-1 ps-xl-5 pe-xl-5">
-        <h3>
-          <img class="me-2" src="assets/icons/widgets.png" width="42"/>
-          <strong class="text-muted">Home</strong> 
-        </h3>
-        <hr/>
-        <ul class="list-group list-group-flush">
-          <li *ngFor="let widget of dataS.lstHomeWidgets" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
-            <a href="{{baseUrlCode + '/widgets/home/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
-            <span class="text-muted"> {{widget.desc}}</span>
-          </li>
-        </ul>
-      </blockquote>       
-    </div>
-  </div> 
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        <strong class="text-muted">Custom Widgets</strong>
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionManualUser">
+      <div class="accordion-body">
+        <blockquote class="pt-xl-1 ps-xl-5 pe-xl-5">
+          <h3>
+            <img class="me-2" src="assets/icons/widgets.png" width="42"/>
+            <strong class="text-muted">Auth</strong>
+          </h3>
+          <hr/>
+          <ul class="list-group list-group-flush">
+            <li *ngFor="let widget of dataS.lstAuthWidgets" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
+              <a href="{{baseUrlCode + '/widgets/auth/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
+              <span class="text-muted"> {{widget.desc}}</span>
+            </li> 
+          </ul>
+        </blockquote>       
+        <blockquote class="pt-xl-1 ps-xl-5 pe-xl-5">
+          <h3>
+            <img class="me-2" src="assets/icons/widgets.png" width="42"/>
+            <strong class="text-muted">Music</strong> 
+          </h3>
+          <hr/>
+          <ul class="list-group list-group-flush">
+            <li *ngFor="let widget of dataS.lstMusicWidgets" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
+              <a href="{{baseUrlCode + '/widgets/music/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
+              <span class="text-muted"> {{widget.desc}}</span>
+            </li>  
+          </ul>
+        </blockquote>       
+        <blockquote class="pt-xl-1 ps-xl-5 pe-xl-5">
+          <h3>
+            <img class="me-2" src="assets/icons/widgets.png" width="42"/>
+            <strong class="text-muted">Home</strong> 
+          </h3>
+          <hr/>
+          <ul class="list-group list-group-flush">
+            <li *ngFor="let widget of dataS.lstHomeWidgets" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
+              <a href="{{baseUrlCode + '/widgets/home/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
+              <span class="text-muted"> {{widget.desc}}</span>
+            </li>
+          </ul>
+        </blockquote>       
+      </div>
+    </div> 
+  </div>
 
   <!-- 7 Proveedores y Servicios-->
   <div class="accordion-item" >
@@ -344,7 +345,7 @@
         <strong class="text-muted">Proveedores y Servicios</strong>
       </button>
     </h2>
-    <div id="collapseSeven" class="accordion-collapse collapse show" aria-labelledby="headingSeven" data-bs-parent="#accordionManualUser">
+    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionManualUser">
       <div class="accordion-body">
         <blockquote class="pt-xl-1 ps-xl-5 pe-xl-5">
           <h3>
