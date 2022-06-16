@@ -31,7 +31,7 @@ export class DataService {
     },
   ];
 
-  private _lstHomeWidgets: iWidget[] = [
+  private _lstSharedWidgets: iWidget[] = [
     {
       name: 'background',
       desc: 'Background app.'
@@ -43,6 +43,22 @@ export class DataService {
     {
       name: 'floating_record_button',
       desc: 'Boton grabación.'
+    },
+    {
+      name: 'app_bar_custom',
+      desc: 'Appbar global.'
+    },
+    {
+      name: 'custom_navigation_bar',
+      desc: 'Barra de navegación inferior.'
+    },
+    {
+      name: 'pop_menu',
+      desc: 'Menú desplegable.'
+    },
+    {
+      name: 'title_page',
+      desc: 'Título pantallas.'
     },
   ];
 
@@ -102,31 +118,31 @@ export class DataService {
   private _lstScreens: iWidget[] = [
     {
       name: 'home_screen',
-      desc: 'Pantalla principal.'
-    },
-    {
-      name: 'list_audios_screen',
-      desc: 'Pantalla listado de audios all/user.'
+      desc: 'Principal.'
     },
     {
       name: 'login_screen',
-      desc: 'Pantalla login.'
+      desc: 'Login.'
     },
     {
       name: 'register_screen',
-      desc: 'Pantalla registro.'
+      desc: 'Registro.'
     },
     {
       name: 'music_screen',
-      desc: 'Pantalla creación de audios.'
+      desc: 'Creación de audios.'
     },
     {
       name: 'player_screen',
-      desc: 'Pantalla reproducción de audios.'
+      desc: 'Reproducción de audios.'
     },
     {
       name: 'settigns_screen',
-      desc: 'Pantalla reproducción de audios.'
+      desc: 'Reproducción de audios.'
+    },
+    {
+      name: 'list_audios_screen',
+      desc: 'Listado de audios all/user.'
     },
   ];
   
@@ -155,7 +171,7 @@ export class DataService {
   ];
 
   get lstAuthWidgets() {return this._lstAuthWidgets}
-  get lstHomeWidgets() {return this._lstHomeWidgets}
+  get lstSharedWidgets() {return this._lstSharedWidgets}
   get lstMusicWidgets() {return this._lstMusicWidgets}
   get lstNodePackages() {return this._lstNodePackages}
   get lstFlutterPackages() {return this._lstFlutterPackages}

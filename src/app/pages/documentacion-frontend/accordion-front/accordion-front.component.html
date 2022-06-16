@@ -47,7 +47,7 @@
           
         </div>
         <div class="p-xl-5 ps-xl-0 col-xl-4">
-            <blockquote class="pt-5 pt-xl-1 pe-xl-2 ps-xl-5">
+            <blockquote class="pt-5 pb-5 pt-xl-1 pe-xl-2 ps-xl-5">
             <h3>
               <img src="assets/icons/mongodb.png"/>
               <a href="https://www.mongodb.com/es" target="_blank"  class="ms-3  pointer">
@@ -72,7 +72,7 @@
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionManualUser">
       <div class="accordion-body row ps-xl-5 pe-xl-5">
         <div class="p-xl-5 col-xl-6">
-          <blockquote class="pt-xl-1 ps-xl-5 pe-xl-5">
+          <blockquote class="pt-xl-1 ps-xl-5 pe-xl-5 pt-2">
             <h3>
               <img src="assets/icons/flutter.png"/>
               <a href="https://pub.dev/" target="_blank" class="ms-2 pointer">
@@ -83,7 +83,7 @@
 
             <ul class="list-group list-group-flush">
               <li *ngFor="let packF of dataS.lstFlutterPackages" class="list-group-item">
-                <a href="{{'https://pub.dev/packages/' + packF}}" class="pointer" target="_blank">{{packF}}</a>
+                <a href="{{'https://pub.dev/packages/' + packF}}" class="pointer" target="_blank"><i class="fa-solid fa-link me-3 text-muted"></i> {{packF}}</a>
               </li>
             </ul>
 
@@ -91,7 +91,7 @@
         </div>
             
         <div class="p-xl-5 pe-xl-5 col-xl-6">
-          <blockquote class="pt-5 pt-xl-1 ps-xl-5 pe-xl-5">
+          <blockquote class="pt-5 pt-xl-1 ps-xl-5 pe-xl-5 pb-3">
             <h3>
               <img src="assets/icons/nodejs.png"/>
               <a href="https://www.npmjs.com/" target="_blank"  class="ms-2 pointer">
@@ -103,7 +103,7 @@
             
             <ul class="list-group list-group-flush">
               <li *ngFor="let packN of dataS.lstNodePackages" class="list-group-item">
-                <a href="{{'https://www.npmjs.com/package/' + packN}}" class="pointer" target="_blank">{{packN}}</a>
+                <a href="{{'https://www.npmjs.com/package/' + packN}}" class="pointer" target="_blank"><i class="fa-solid fa-link me-3 text-muted"></i>  {{packN}}</a>
               </li>
             </ul>
           </blockquote>
@@ -132,16 +132,16 @@
               <span><strong class="text-muted">Fields</strong></span>
               <span><strong class="text-muted">Default</strong></span>
             </li>
-            <li class="list-group-item">name: <span class="text-info">String</span></li>
-            <li class="list-group-item">email: <span class="text-info">String</span></li>
-            <li class="list-group-item">password: <span class="text-info">String</span></li>
-            <li class="list-group-item">img?: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> name: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> email: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> password: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> img?: <span class="text-info">String</span></li>
             <li class="list-group-item pe-4 d-flex justify-content-between">
-              <span>state?: <span class="text-info">Boolean</span></span>
+              <span><i class="fa-solid fa-caret-right text-info me-2"></i> state?: <span class="text-info">Boolean</span></span>
               <span class="text-danger">False</span>
             </li>
             <li class="list-group-item pe-4 d-flex justify-content-between">
-              <span>google?: <span class="text-info">False</span></span>
+              <span><i class="fa-solid fa-caret-right text-info me-2"></i> google?: <span class="text-info">False</span></span>
               <span class="text-danger">False</span>
             </li>
           </ul>
@@ -158,10 +158,10 @@
               <span><strong class="text-muted">Fields</strong></span>
               <span><strong class="text-muted">Default</strong></span>
             </li>
-            <li class="list-group-item">owner: <span class="text-info">User</span></li>
-            <li class="list-group-item">track: <span class="text-info">Audio[] <em class="text-muted"> front</em></span></li>
-            <li class="list-group-item">user_name: <span class="text-info">String</span></li>
-            <li class="list-group-item">img?: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> owner: <span class="text-info">User</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> track: <span class="text-info">Audio[] <em class="text-muted"> front</em></span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> user_name: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> img?: <span class="text-info">String</span></li>
           </ul>
         </blockquote>
 
@@ -176,9 +176,9 @@
               <span><strong class="text-muted">Fields</strong></span>
               <span><strong class="text-muted">Default</strong></span>
             </li>
-            <li class="list-group-item">idAudio: <span class="text-info">Number</span> <em class="text-muted"> front</em></li>
-            <li class="list-group-item">volume: <span class="text-info">Number</span></li>
-            <li class="list-group-item">duration: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> idAudio: <span class="text-info">Number</span> <em class="text-muted"> front</em></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> volume: <span class="text-info">Number</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> duration: <span class="text-info">String</span></li>
           </ul>
         </blockquote>
 
@@ -207,13 +207,13 @@
               <span><strong class="text-muted">Default</strong></span>
             </li>
             <li class="list-group-item pe-4 d-flex justify-content-between">
-              <span>id: <span class="text-info">int</span></span>
+              <span><i class="fa-solid fa-caret-right me-2 text-info"></i> id: <span class="text-info">int</span></span>
               <span class="text-danger">-1</span>
             </li>
-            <li class="list-group-item">musicSheet: <span class="text-info">String</span></li>
-            <li class="list-group-item">icon: <span class="text-info">String</span></li>
-            <li class="list-group-item">cite: <span class="text-info">String</span></li>
-            <li class="list-group-item">iconDisable: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> musicSheet: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> icon: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> cite: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> iconDisable: <span class="text-info">String</span></li>
           </ul>
         </blockquote>
 
@@ -228,10 +228,10 @@
               <span><strong class="text-muted">Fields</strong></span>
               <span><strong class="text-muted">Default</strong></span>
             </li>
-            <li class="list-group-item">id: <span class="text-info">String</span></li>
-            <li class="list-group-item">title: <span class="text-info">String</span></li>
-            <li class="list-group-item">tracks: <span class="text-info">Track[]</span></li>
-            <li class="list-group-item">user_name: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> id: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> title: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> tracks: <span class="text-info">Track[]</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> user_name: <span class="text-info">String</span></li>
           </ul>
         </blockquote>
 
@@ -247,12 +247,12 @@
               <span><strong class="text-muted">Default</strong></span>
             </li>
             <li class="list-group-item pe-4 d-flex justify-content-between">
-              <span>id: <span class="text-info">int</span></span>
+              <span><i class="fa-solid fa-caret-right me-2 text-info"></i> id: <span class="text-info">int</span></span>
               <span class="text-danger">-1</span>
             </li>
-            <li class="list-group-item">icon: <span class="text-info">String</span></li>
-            <li class="list-group-item">pathAudio: <span class="text-info">String</span></li>
-            <li class="list-group-item">audio: <span class="text-info">Audio</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> icon: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> pathAudio: <span class="text-info">String</span></li>
+            <li class="list-group-item"><i class="fa-solid fa-caret-right me-2 text-info"></i> audio: <span class="text-info">Audio</span></li>
           </ul>
         </blockquote>
 
@@ -276,9 +276,11 @@
           </h3>
           <hr/>
           <ul class="list-group list-group-flush">
-            <li *ngFor="let widget of dataS.lstScreens" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
-              <a href="{{baseUrlCode + '/screens/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
-              <span class="text-muted"> {{widget.desc}}</span>
+            <li *ngFor="let widget of dataS.lstScreens" class="list-group-item pe-1 ps-1 d-sm-flex justify-content-between">
+              <div>
+                <a href="{{baseUrlCode + '/screens/' + widget.name + '.dart'}}" class="pointer text-nowrap me-2" target="_blank"><i class="fa-solid fa-link me-3 text-muted"></i>{{widget.name}}</a>
+              </div>
+              <span class="text-muted "> {{widget.desc}}</span>
             </li> 
           </ul>
         </blockquote>                 
@@ -302,8 +304,10 @@
           </h3>
           <hr/>
           <ul class="list-group list-group-flush">
-            <li *ngFor="let widget of dataS.lstAuthWidgets" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
-              <a href="{{baseUrlCode + '/widgets/auth/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
+            <li *ngFor="let widget of dataS.lstAuthWidgets" class="list-group-item pe-3 ps-3 d-sm-flex justify-content-between">
+              <div>
+                <a href="{{baseUrlCode + '/widgets/auth/' + widget.name + '.dart'}}" class="pointer" target="_blank"><i class="fa-solid fa-link me-3 text-muted"></i>{{widget.name}}</a>
+              </div>
               <span class="text-muted"> {{widget.desc}}</span>
             </li> 
           </ul>
@@ -315,8 +319,10 @@
           </h3>
           <hr/>
           <ul class="list-group list-group-flush">
-            <li *ngFor="let widget of dataS.lstMusicWidgets" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
-              <a href="{{baseUrlCode + '/widgets/music/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
+            <li *ngFor="let widget of dataS.lstMusicWidgets" class="list-group-item pe-3 ps-3 d-sm-flex justify-content-between">
+              <div>
+                <a href="{{baseUrlCode + '/widgets/music/' + widget.name + '.dart'}}" class="pointer" target="_blank"><i class="fa-solid fa-link me-3 text-muted"></i>{{widget.name}}</a>
+              </div>
               <span class="text-muted"> {{widget.desc}}</span>
             </li>  
           </ul>
@@ -324,12 +330,14 @@
         <blockquote class="pt-xl-1 ps-xl-5 pe-xl-5">
           <h3>
             <img class="me-2" src="assets/icons/widgets.png" width="42"/>
-            <strong class="text-muted">Home</strong> 
+            <strong class="text-muted">Shared</strong> 
           </h3>
           <hr/>
           <ul class="list-group list-group-flush">
-            <li *ngFor="let widget of dataS.lstHomeWidgets" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
-              <a href="{{baseUrlCode + '/widgets/home/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
+            <li *ngFor="let widget of dataS.lstSharedWidgets" class="list-group-item pe-3 ps-3 d-sm-flex justify-content-between">
+              <div>
+                <a href="{{baseUrlCode + '/widgets/shared/' + widget.name + '.dart'}}" class="pointer" target="_blank"><i class="fa-solid fa-link me-3 text-muted"></i>{{widget.name}}</a>
+              </div>
               <span class="text-muted"> {{widget.desc}}</span>
             </li>
           </ul>
@@ -345,7 +353,7 @@
         <strong class="text-muted">Proveedores y Servicios</strong>
       </button>
     </h2>
-    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionManualUser">
+    <div id="collapseSeven" class="accordion-collapse collapse show" aria-labelledby="headingSeven" data-bs-parent="#accordionManualUser">
       <div class="accordion-body">
         <blockquote class="pt-xl-1 ps-xl-5 pe-xl-5">
           <h3>
@@ -354,8 +362,10 @@
           </h3>
           <hr/>
           <ul class="list-group list-group-flush">
-            <li *ngFor="let widget of dataS.lstProviders" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
-              <a href="{{baseUrlCode + '/providers/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
+            <li *ngFor="let widget of dataS.lstProviders" class="list-group-item pe-3 ps-3 d-sm-flex justify-content-between">
+              <div>
+                <a href="{{baseUrlCode + '/providers/' + widget.name + '.dart'}}" class="pointer" target="_blank"><i class="fa-solid fa-link me-3 text-muted"></i>{{widget.name}}</a>
+              </div>
               <span class="text-muted"> {{widget.desc}}</span>
             </li> 
           </ul>
@@ -367,8 +377,10 @@
           </h3>
           <hr/>
           <ul class="list-group list-group-flush">
-            <li *ngFor="let widget of dataS.lstServices" class="list-group-item pe-3 ps-3 d-flex justify-content-between">
-              <a href="{{baseUrlCode + '/providers/' + widget.name + '.dart'}}" class="pointer" target="_blank">{{widget.name}}</a>
+            <li *ngFor="let widget of dataS.lstServices" class="list-group-item pe-3 ps-3 d-sm-flex justify-content-between">
+              <div>
+                <a href="{{baseUrlCode + '/services/' + widget.name + '.dart'}}" class="pointer" target="_blank"><i class="fa-solid fa-link me-3 text-muted"></i>{{widget.name}}</a>
+              </div>
               <span class="text-muted"> {{widget.desc}}</span>
             </li> 
           </ul>
