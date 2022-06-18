@@ -1,13 +1,13 @@
 <form [formGroup]="form" class="card-body">
    <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">Nueva contraseña</label>
-      <input formControlName="pass1" type="password" class="form-control" id="pass1">
+      <input formControlName="pass1" type="password" class="form-control" onchange="validForm()">
    </div>
    <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">Repite contraseña</label>
-      <input formControlName="pass2" type="password" class="form-control" id="pass2">
+      <input formControlName="pass2" type="password" class="form-control" onchange="validForm()">
    </div>
-   <p *ngIf="err1" hidden>Las contraseñas no coinciden</p>
-   <p *ngIf="err2" hidden>La contraseña debe tener minimo 6 carácteres</p>
+   <p class="text-danger" *ngIf="err1" hidden>Las contraseñas no coinciden</p>
+   <p class="text-danger" *ngIf="err2" hidden>La contraseña debe tener minimo 6 carácteres</p>
    <button type="button" class="btn btn-primary" id="btn" disabled>Aceptar</button>
 </form>
