@@ -10,6 +10,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { AccordionComponent } from './pages/manual-usuario/accordion/accordion.component';
 import { ModalComponent } from './shared/modal/modal.component';
 import { AccordionFrontComponent } from './pages/documentacion-frontend/accordion-front/accordion-front.component';
+import { ChangePassComponent } from './pages/change-pass/change-pass.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { AccordionFrontComponent } from './pages/documentacion-frontend/accordio
     AccordionComponent,
     ModalComponent,
     AccordionFrontComponent,
+    ChangePassComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
