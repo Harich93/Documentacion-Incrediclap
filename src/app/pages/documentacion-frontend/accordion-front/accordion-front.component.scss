@@ -13,3 +13,10 @@ a:hover {
       color: #fff;
    }
 }
+
+li {
+   &.hover:hover {
+      transition: all .3s ease-in-out;
+      background-color: darken($color: white, $amount: 10)
+   }
+}
