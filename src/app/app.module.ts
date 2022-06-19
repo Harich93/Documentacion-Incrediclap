@@ -12,6 +12,7 @@ import { ModalComponent } from './shared/modal/modal.component';
 import { AccordionFrontComponent } from './pages/documentacion-frontend/accordion-front/accordion-front.component';
 import { ChangePassComponent } from './pages/change-pass/change-pass.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy, APP_BASE_HREF } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { VerifyEmailComponent } from './pages/verify-email/verify-email.component';
@@ -36,7 +37,9 @@ import { VerifyEmailComponent } from './pages/verify-email/verify-email.componen
     HttpClientModule,
     RouterModule
   ],
-  providers: [],
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
