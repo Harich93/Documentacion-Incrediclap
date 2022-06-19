@@ -6,8 +6,6 @@ import { iWidget } from '../interfaces/iWidget';
 })
 export class DataService {
 
-  constructor() { }
-
   private _lstAuthWidgets: iWidget[] = [
     {
       name: 'auth_background',

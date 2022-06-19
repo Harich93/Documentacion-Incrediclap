@@ -12,6 +12,9 @@ import { ModalComponent } from './shared/modal/modal.component';
 import { AccordionFrontComponent } from './pages/documentacion-frontend/accordion-front/accordion-front.component';
 import { ChangePassComponent } from './pages/change-pass/change-pass.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { VerifyEmailComponent } from './pages/verify-email/verify-email.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     ModalComponent,
     AccordionFrontComponent,
     ChangePassComponent,
+    VerifyEmailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

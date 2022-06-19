@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from 'src/app/services/auth.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-change-pass',
@@ -7,78 +9,71 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/fo
   styleUrls: ['./change-pass.component.scss']
 })
 export class ChangePassComponent implements OnInit {
-
-  private _token: string = '';
   public form: FormGroup;
   public pass1!: AbstractControl;
   public pass2!: AbstractControl;
-  public isFormValid: boolean = false;
-  public err1: boolean = false;
-  public err2: boolean = false;
+  public isError1: boolean = true;
+  public isError2: boolean = true;
+  public isErrorAPI: boolean | undefined = undefined;
   public isDisabled = true;
+  public isLoading = false;
+  public msg: string = '';
 
-  constructor( private fb: FormBuilder) { 
+  constructor( private fb: FormBuilder, private authS: AuthService, private route: ActivatedRoute) { 
     this.form = this.fb.group({
       pass1: ['',[Validators.min(6), Validators.required]],
       pass2: ['',[Validators.min(6), Validators.required]]
     });
   }
-
-
+  
   ngOnInit(): void {
     const { pass1, pass2 } = this.form.controls; 
     this.pass1 = pass1;
     this.pass2 = pass2;
+
+    this.pass1.valueChanges.subscribe(x => this.isValidPass())
+    this.pass2.valueChanges.subscribe(x => this.isValidPass())
+
+    this.authS.token = this.route.snapshot.queryParams['token'] || '';    
   }
+  
 
-  getToken() {
-    const urlParams = new URLSearchParams(window.location.search);
-    this._token = urlParams.get('token') || '';
-    console.log(this._token);
- }
+  isValidPass() {
 
- validForm() {
-  if(this.pass1.value != '' && this.pass1.value.length < 6) {
-     this.err2 = false;   
-     this.isDisabled = true
-  }
+    if(this.pass1.dirty){
+      
+      if( this.pass1.value.length < 6 ) {
+        this.msg = "Debe tener 6 caracteres minimo";
+        this.isError1 = true;
+      }
 
-  else{
-
-     this.err2 = true;
-
-     if(this.pass2.value != '') {
-        
-        if(this.pass1.value != this.pass2.value) {
-          this.isDisabled = true
-          this.err1 = false;
-     
-        }
-        else {
-          this.isDisabled = false;
-          this.err1 = true;
-          this.err2 = true;
-        }
-     }
-  }
-}
-
-  async changePass() {
-
-    let body = { 
-       password: this.pass2.value, 
+      else { this.isError1 = false; }
+      
     }
 
-    const url = `https://incredibclap-backend-ts.herokuapp.com/users`;
+    if(this.pass2.dirty){
+        
+      if( this.pass2.value != this.pass1.value && this.pass1.value.length > 0) {
+        this.msg = "Las contraseñas no coinciden"
+        this.isError2 = true;
+      }
 
-    const response = await fetch(url, {
-       method: 'PUT',
-       headers: {'Content-Type': 'application/json', 'x-token': this._token},
-       body: JSON.stringify(body)
-    });
+      else { this.isError2 = false; }
+    }
+
     
-    console.log(response);
-    
- }
+  }
+
+
+  changePass() {
+    this.isLoading = true;
+    this.authS.changePass(this.pass2.value)
+      .subscribe( resp => {
+        resp.uid ? (this.isErrorAPI = false) : (this.isErrorAPI = true )
+        console.log(resp);
+        
+        this.isLoading = false;
+      }); 
+  }
 
 }
