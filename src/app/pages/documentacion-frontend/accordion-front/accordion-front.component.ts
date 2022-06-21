@@ -8,7 +8,7 @@ import { DataService } from 'src/app/services/data.service'
 })
 export class AccordionFrontComponent {
 
-  baseUrlCode: string = 'https://github.com/Harich93/Flutter--App_IncredibClap/blob/main/lib'; 
+  baseUrlApp: string = 'https://github.com/Harich93/TFG-IncrediClap/tree/main/App/lib'; 
 
   constructor(public dataS: DataService){}
 
