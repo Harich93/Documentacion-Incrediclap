@@ -16,6 +16,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { VerifyEmailComponent } from './pages/verify-email/verify-email.component';
+import { PoliticaPrivacidadComponent } from './pages/politica-privacidad/politica-privacidad.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { VerifyEmailComponent } from './pages/verify-email/verify-email.componen
     AccordionFrontComponent,
     ChangePassComponent,
     VerifyEmailComponent,
+    PoliticaPrivacidadComponent,
   ],
   imports: [
     BrowserModule,
